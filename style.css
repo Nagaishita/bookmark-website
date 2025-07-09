@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 480px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2d3436;
+  font-size: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ced6e0;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #576574;
+  outline: none;
+}
+
+#addBtn {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#addBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.5);
+}
+
+#errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bookmark-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f2f6;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.bookmark-info {
+  flex: 1 1 100%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2f3542;
+  margin-bottom: 10px;
+}
+
+.bookmark-item button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  margin: 4px 6px 0 0;
+  transition: all 0.3s ease;
+}
+
+.bookmark-item button:hover {
+  transform: scale(1.05);
+}
+
+/* First button = Visit */
+.bookmark-item button:nth-child(2) {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* Second button = Edit */
+.bookmark-item button:nth-child(3) {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  color: black;
+}
+
+/* Third button = Remove */
+.bookmark-item button:nth-child(4) {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
